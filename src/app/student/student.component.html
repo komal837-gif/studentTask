@@ -43,9 +43,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let std of studentArr; trackBy:trackById">
-                        <td>{{std.fname}}</td>
-                        <td>{{std.lname}}</td>
+                    <tr *ngFor="let std of studentArr;let i = index; trackBy:trackById">
+                        <td>{{i+1}}</td>
+                        <td>{{std.fname}} {{std.lname}}</td>
                         <td>{{std.email}}</td>
                         <td>{{std.contact}}</td>
                         <td><button
@@ -65,5 +65,4 @@
         </div>
     </div>
 </div>
-
 </div>
